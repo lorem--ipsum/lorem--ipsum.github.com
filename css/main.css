@@ -79,3 +79,12 @@ body .primary-button {
   padding: 1em;
   font-size: 80%;
 }
+
+a {
+  color: #3b8bba;
+  text-decoration:none;
+}
+
+a:visited {
+  color: #265778;
+}
