@@ -100,3 +100,23 @@ a:visited {
   color: #AAA;
 }
 
+.job .tag {
+  font-size: 12px;
+  padding: 2px 5px;
+  color: #FFF;
+  background-color: #3b8bba;
+  border: 1px solid;
+}
+
+
+.header .pure-menu li a:hover {
+  border-bottom: 1px solid #FFF;
+}
+
+.pure-menu-non-selected {
+  border-bottom: 3px solid #FFF;
+}
+
+.pure-menu-selected {
+  border-bottom: 3px solid #3b8bba;
+}

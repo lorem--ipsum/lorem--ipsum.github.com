@@ -3,25 +3,22 @@
     <div class="pure-u-2-3">
       <div class="l-box splash-text">
         <h1 class="splash-head">
-          Professional experience
+          Education and work experience
         </h1>
 
         <h2 class="splash-subhead">
-          I'm a front-end developper, specialized in web interfaces.
-          I especially enjoy creating awesome data visualizations. I know JavaScript and HTML5, but I also fully understand technical issues, thanks to my engineer's degree.
+          I'm a self-taught front-end developer with a strong, cross-domain technical background.
         </h2>
       </div>
     </div>
-    <div class="pure-u-1">
-  <div class="l-box job">
-    <h3>Front-end developer <span class="time">since january 2011</span></h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-</div>
+    <div ng-repeat='exp in experiences' class="l-box pure-u-1">
+      <div class="pure-u-2-5 job">
+        <h3>{{exp.what}} <span class="time">{{exp.when}}</span></h3>
+        <p>{{exp.how}}</p>
+        <p>  
+          <span ng-repeat='tag in exp.tags' class='tag'>{{tag}}</span>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
