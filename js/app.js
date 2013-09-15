@@ -41,7 +41,7 @@ angular.module('resume', [])
     {
       what: "Engineer's degree",
       when: 'from 2003 to 2008',
-      how: 'Degree from a generalist engineering school. Learned disciplins such as physics, thermodynamics, industrial electricy, automatisms, electronics...',
+      how: 'Degree from a generalist engineering school. Learned disciplins such as physics, thermodynamics, industrial electricity, automatisms, electronics...',
       tags: []
     }
   ];
