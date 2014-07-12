@@ -31,7 +31,10 @@ angular.module('resume', ['ngResource'])
       stargazers: function() {
         var deferred = $q.defer()
         res.get({user: user, repo: repo}, function(data) {
-          deferred.resolve({count: data.stargazers_count, link: data.stargazers_url});
+          deferred.resolve({
+            count: data.stargazers_count,
+            link: 'https://github.com/' + user + '/' + repo + '/stargazers'
+          });
         });
 
         return deferred.promise;
