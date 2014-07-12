@@ -178,7 +178,7 @@ code {
   border-bottom: 1px solid lightgrey;
 }
 
-.project div.preview > img {
+.project div.preview > a img {
   height: 100%;
   max-width: none;
 }
