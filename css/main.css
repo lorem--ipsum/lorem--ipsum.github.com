@@ -46,7 +46,6 @@ body .primary-button {
   font-size: 150%;
 }
 
-
 .content .content-subhead {
   color: #999;
   padding-bottom: 0.3em;
@@ -109,6 +108,13 @@ a:visited {
 }
 
 
+code {
+  font-size: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  padding: 1px 4px;
+}
+
 .header .pure-menu li a:hover {
   border-bottom: 1px solid #FFF;
 }
@@ -119,4 +125,83 @@ a:visited {
 
 .pure-menu-selected {
   border-bottom: 3px solid #3b8bba;
+}
+
+.projects {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.project {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  height: 490px;
+  margin-bottom: 60px;
+}
+
+.project div.title {
+  text-transform: uppercase;
+  padding-left: 10px;
+  background-color: #3b8bba;
+  color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+
+.project div.title h3 {
+  margin: 0;
+}
+
+.project div.title a {
+  color: white;
+}
+
+.project div.title span.stargazers {
+  font-size: 11px;
+  float: right;
+  margin-right: 10px;
+  font-weight: 100;
+}
+
+.project div.title span.stargazers > i {
+  line-height: inherit;
+}
+
+.project div.preview {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px solid lightgrey;
+}
+
+.project div.preview > img {
+  height: 100%;
+  max-width: none;
+}
+
+
+.project div.desc {
+  padding: 10px;
+  height: 180px;
+}
+
+.project div.link {
+  text-align: center;
+}
+
+.project div.link button {
+  background-color: white;
+  border: 1px solid #3b8bba;
+  border-radius: 15px;
+  color: #3b8bba;
+  padding: 2px 10px 0px 10px;
+}
+
+.project div.link button:hover {
+  background-color: #3b8bba;
+  color: white;
 }
