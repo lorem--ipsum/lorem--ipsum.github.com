@@ -48,6 +48,7 @@ angular.module('resume', ['ngResource'])
 }])
 
 .controller('PetsCtrl', function($scope, $octo) {
+  mixpanel.track("Pets");
   $scope.projects = [
     {
       who: 'n3-charts',
@@ -125,6 +126,7 @@ angular.module('resume', ['ngResource'])
 })
 
 .controller('ExperienceCtrl', function($scope) {
+  mixpanel.track("Experience");
   $scope.experiences = [
     {
       what: 'Software Engineer',
