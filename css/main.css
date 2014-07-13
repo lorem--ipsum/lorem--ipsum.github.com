@@ -186,11 +186,31 @@ code {
 
 .project div.desc {
   padding: 10px;
-  height: 180px;
+  height: 195px;
+}
+
+.project div.links {
+  text-align: center;
+  position: relative;
 }
 
 .project div.link {
   text-align: center;
+  display: inline;
+}
+
+.project div.link  div.link-title {
+  visibility: hidden;
+  position: absolute;
+  top: 20px;
+  color: #3b8bba;
+  width: 100%;
+  text-align: center;
+  pointer-events: none;
+}
+
+.project div.link:hover  div.link-title {
+  visibility: visible;
 }
 
 .project div.link button {
@@ -198,7 +218,10 @@ code {
   border: 1px solid #3b8bba;
   border-radius: 15px;
   color: #3b8bba;
-  padding: 2px 10px 0px 10px;
+  padding: 2px 10px 1px 10px;
+  text-transform: lowercase;
+  font-size: 12px;
+  line-height: 1em;
 }
 
 .project div.link button:hover {

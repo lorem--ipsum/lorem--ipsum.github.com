@@ -54,9 +54,11 @@ angular.module('resume', ['ngResource'])
       stargazers: $octo('n3-charts', 'line-chart').stargazers(),
       what: [
         'A 2-dimensional data visualization library for AngularJS.',
-        'Based on D3.js.'
+        '95% average test coverage rate, plus visual regression CI.',
+        'Built on top of D3.js.'
       ],
-      where: 'http://n3-charts.github.io/line-chart',
+      demo: 'http://n3-charts.github.io/line-chart',
+      github: 'https://github.com/n3-charts/line-chart',
       image: 'images/n3-charts.png'
     },
     {
@@ -64,9 +66,11 @@ angular.module('resume', ['ngResource'])
       stargazers: $octo('lorem--ipsum', 'cammy').stargazers(),
       what: [
         'A proof-of-concept for 3-dimensional visualizations using D3.js and Canvas.',
+        'Uses a simple orthogonal projection camera.',
         'Oddly satisfying.'
       ],
-      where: 'http://lorem--ipsum.github.io/cammy',
+      demo: 'http://lorem--ipsum.github.io/cammy',
+      github: 'https://github.com/lorem--ipsum/cammy',
       image: 'images/cammy.png'
     },
     {
@@ -74,9 +78,11 @@ angular.module('resume', ['ngResource'])
       stargazers: $octo('lorem--ipsum', 'percival').stargazers(),
       what: [
         'An Abstract Syntax Tree editor for AngularJS.',
-        'Hard to write, probably hard to read too.'
+        'Well-tested, rock-solid and very configurable.',
+        'Hard to write, probably hard to read.'
       ],
-      where: 'http://lorem--ipsum.github.io/percival',
+      demo: 'http://lorem--ipsum.github.io/percival',
+      github: 'https://github.com/lorem--ipsum/percival',
       image: 'images/percival.png'
     },
     {
@@ -84,29 +90,35 @@ angular.module('resume', ['ngResource'])
       stargazers: $octo('lorem--ipsum', 'apojop').stargazers(),
       what: [
         'A Plain old JavaScript Objects Pretty-printer for AngularJS.',
-        'Truly awesome, sadly not editable (working on it).'
+        'Well-tested and versatile, most likely prod-ready.',
+        'Truly awesome, sadly not editable.'
       ],
-      where: 'http://lorem--ipsum.github.io/apojop',
+      demo: 'http://lorem--ipsum.github.io/apojop',
+      github: 'https://github.com/lorem--ipsum/apojop',
       image: 'images/apojop.png'
     },
     {
       who: 'platypus',
       stargazers: $octo('lorem--ipsum', 'platypus').stargazers(),
       what: [
-        'Converts plain text expressions to Abstract Syntax Trees using a micro-grammar parser.',
-        'Even the term "micro-grammar" is sweet.'
+        'Converts plain text expressions to ASTs using a micro-grammar parser.',
+        'Even the term "micro-grammar" is sweet.',
+        'Pluggable into Percival.'
       ],
-      where: 'http://lorem--ipsum.github.io/platypus',
+      demo: 'http://lorem--ipsum.github.io/platypus',
+      github: 'https://github.com/lorem--ipsum/platypus',
       image: 'images/platypus.png'
     },
     {
       who: 'minesweeper',
       stargazers: $octo('lorem--ipsum', 'mine-sweeper').stargazers(),
       what: [
-        'The classic minesweeper built using AngularJS. With gifs. And a cat.',
-        'And a gorilla.'
+        'The classic minesweeper built using AngularJS.',
+        'With gorillas, cats, love, passion, adventure and much more !',
+        'But mostly with a gorilla.'
       ],
-      where: 'http://lorem--ipsum.github.io/mine-sweeper',
+      demo: 'http://lorem--ipsum.github.io/mine-sweeper',
+      github: 'https://github.com/lorem--ipsum/mine-sweeper',
       image: 'images/minesweeper.png'
     }
   ];

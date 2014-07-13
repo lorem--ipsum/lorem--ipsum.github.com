@@ -14,10 +14,19 @@
           <div class="desc">
             <p ng-repeat="w in project.what">{{w}}</p>
           </div>
-          <div class="link">
-            <a target="_blank" ng-href="{{project.where}}">
-              <button class="pure-button pure-button-primary"><i class="fa fa-long-arrow-right"></i></button>
-            </a>
+          <div class="links">
+            <div class="link">
+              <div class="link-title">source</div>
+              <a target="_blank" ng-href="{{project.github}}">
+                <button class="pure-button pure-button-primary"><i class="fa fa-github"></i></button>
+              </a>
+            </div>
+            <div class="link">
+              <div class="link-title">demo</div>
+              <a target="_blank" ng-href="{{project.demo}}">
+                <button class="pure-button pure-button-primary"><i class="fa fa-flask"></i></button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
