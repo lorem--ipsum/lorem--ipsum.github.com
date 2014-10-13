@@ -8,6 +8,12 @@ body {
   padding: 1em;
 }
 
+@media screen and (max-width: 750px) {
+  .fake-image {
+    display: none;
+  }
+}
+
 .header {
   margin: 0 0;
 }
@@ -182,7 +188,6 @@ code {
   height: 100%;
   max-width: none;
 }
-
 
 .project div.desc {
   padding: 10px;
