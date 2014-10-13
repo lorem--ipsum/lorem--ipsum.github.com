@@ -1,7 +1,5 @@
 'use strict';
 
-
-// Declare app level module which depends on filters, and services
 angular.module('resume', ['ngResource'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/home', {templateUrl: 'partials/home.html'});
@@ -48,6 +46,7 @@ angular.module('resume', ['ngResource'])
 }])
 
 .controller('PetsCtrl', function($scope, $octo) {
+  mixpanel.track("Pets");
   $scope.projects = [
     {
       who: 'n3-charts',
@@ -125,9 +124,10 @@ angular.module('resume', ['ngResource'])
 })
 
 .controller('ExperienceCtrl', function($scope) {
+  mixpanel.track("Experience");
   $scope.experiences = [
     {
-      what: 'Software Engineer',
+      what: 'Front-end engineer',
       when: 'since january 2014',
       how: 'Remotely working for an industry-leading SaaS startup based in San Francisco on the client-side layer of an exploratory analytics application. Also developing creative solutions for data visualization using D3.js (heck, this rocks).',
       tags: ['CoffeeScript', 'HTML', 'AngularJS', 'D3.js', 'Sass', 'LESS', 'Python', 'Bash']
