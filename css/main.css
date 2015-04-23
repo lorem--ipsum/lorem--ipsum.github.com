@@ -1,175 +1,101 @@
-body {
-  margin: 0 auto;
-  line-height: 1.7em;
-  font-family: 'Rokkitt', serif;
+*, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Code Pro';
+  font-weight: 100!important;
 }
 
-.l-box {
-  padding: 1em;
+.section {
+  width: 100%;
+  margin-bottom: 80px;
 }
 
-@media screen and (max-width: 750px) {
-  .fake-image {
-    display: none;
-  }
+.line {
+  border-top: 1px solid;
+  margin-top: 30px;
 }
 
-.header {
-  margin: 0 0;
+.blue * {
+  color: hsla(215, 65%, 54%, 1);
 }
 
-.header .pure-menu {
-  padding: 0.5em;
+.green * {
+  color: hsla(152, 74%, 35%, 1);
 }
 
-.header .pure-menu li a:hover {
-  background: none;
-  border: none;
-  color: #aaa;
+.bd-grey {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
 }
 
-body .primary-button {
-  background: #02a6eb;
-  color: #fff;
+.bg-green {
+  background-color: hsla(152, 74%, 35%, 1);
 }
 
-.splash {
-  margin: 2em auto 0;
-  padding: 3em 0.5em;
-  background: #eee;
-}
-.splash .splash-head {
-  font-size: 300%;
-  margin: 0em 0;
-  line-height: 1.2em;
-}
-.splash .splash-subhead {
-  color: #999;
-  font-weight: 300;
-  line-height: 1.4em;
-}
-.splash .primary-button {
-  font-size: 150%;
+
+/* Experiences */
+.section.experiences .experience .title .text {
+  font-size: 1.5em;
 }
 
-.content .content-subhead {
-  color: #999;
-  padding-bottom: 0.3em;
-  text-transform: uppercase;
-  margin: 0;
-  border-bottom: 2px solid #eee;
+.section.experiences .experience .time {
+  padding-top: 10px;
+  color: lightgrey;
+}
+
+.section.experiences .experience:hover .time {
+  color: initial;
+}
+
+.section.experiences .experience .tag {
+  margin-top: 5px;
+  opacity: 0;
+
+  -webkit-transition: opacity linear 0.3s;
+  -moz-transition: opacity linear 0.3s;
+  transition: opacity linear 0.3s;
+}
+
+.section.experiences .experience:hover .tag {
+  opacity: 1;
+}
+
+.section.experiences .experience .time * {
   display: inline-block;
 }
 
-.content .content-ribbon {
-  margin: 3em;
-  border-bottom: 1px solid #eee;
+.section.experiences .experience .time .from:after {
+  content: " -> ";
 }
 
-.ribbon {
-  background: #eee;
-  text-align: center;
-  padding: 2em;
-  color: #999;
-}
-.ribbon h2 {
-  display: inline;
-  font-weight: normal;
+.section.experiences .experience {
+  margin-bottom: 40px;
 }
 
-.footer {
-  background: #111;
-  color: #666;
-  text-align: center;
-  padding: 1em;
-  font-size: 80%;
+.section.experiences .label {
+  margin-right: 5px;
 }
-
-a {
-  color: #3b8bba;
-  text-decoration:none;
-}
-
-a:visited {
-  color: #265778;
-}
-
-.job {
-}
-
-.job h3 {
-  color: #265778;
-}
-
-.time {
-  color: #AAA;
-}
-
-.job .tag {
-  font-size: 12px;
-  padding: 2px 5px;
-  color: #FFF;
-  background-color: #3b8bba;
-  border: 1px solid;
-}
+/* - */
 
 
-code {
-  font-size: 10px;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-  padding: 1px 4px;
-}
-
-.header .pure-menu li a:hover {
-  border-bottom: 1px solid #FFF;
-}
-
-.pure-menu-non-selected {
-  border-bottom: 3px solid #FFF;
-}
-
-.pure-menu-selected {
-  border-bottom: 3px solid #3b8bba;
-}
-
-.projects {
-  max-width: 980px;
-  margin: 0 auto;
-}
-
+/* Pet projects */
 .project {
-  width: 80%;
+  background-color: hsla(0, 0%, 98%, 1);
   margin: 0 auto;
-  background-color: white;
-  border-radius: 5px;
-  height: 490px;
   margin-bottom: 60px;
+  max-width: 320px;
 }
 
 .project div.title {
   text-transform: uppercase;
   padding-left: 10px;
-  background-color: #3b8bba;
-  color: white;
+  border: 1px solid transparent ;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 
-.project div.title h3 {
-  margin: 0;
-}
-
-.project div.title a {
-  color: white;
-}
-
 .project div.title span.stargazers {
-  font-size: 11px;
   float: right;
   margin-right: 10px;
-  font-weight: 100;
 }
 
 .project div.title span.stargazers > i {
@@ -179,6 +105,7 @@ code {
 .project div.preview {
   height: 200px;
   width: 100%;
+  background-color: white;
   text-align: center;
   overflow: hidden;
   border-bottom: 1px solid lightgrey;
@@ -191,7 +118,11 @@ code {
 
 .project div.desc {
   padding: 10px;
-  height: 195px;
+  height: 215px;
+}
+
+.project div.desc p {
+  font-size: 11px;
 }
 
 .project div.links {
@@ -208,7 +139,6 @@ code {
   visibility: hidden;
   position: absolute;
   top: 20px;
-  color: #3b8bba;
   width: 100%;
   text-align: center;
   pointer-events: none;
@@ -220,9 +150,9 @@ code {
 
 .project div.link button {
   background-color: white;
-  border: 1px solid #3b8bba;
+  border: 1px solid hsla(152, 74%, 35%, 1);
   border-radius: 15px;
-  color: #3b8bba;
+  color: hsla(152, 74%, 35%, 1);
   padding: 2px 10px 1px 10px;
   text-transform: lowercase;
   font-size: 12px;
@@ -230,6 +160,17 @@ code {
 }
 
 .project div.link button:hover {
-  background-color: #3b8bba;
+  background-color: hsla(152, 74%, 35%, 1);
   color: white;
+}
+/* - */
+
+.splash {
+  margin-top: 130px;
+  margin-bottom: 250px;
+}
+
+.blah {
+  margin: 60px auto 100px auto;
+  /*font-size: 1.2em;*/
 }

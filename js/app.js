@@ -8,7 +8,7 @@ angular.module('resume', ['ngResource'])
   $routeProvider.otherwise({redirectTo: '/home'});
 }])
 
-.controller('MenuCtrl', function($scope, $location) {
+.controller('NavCtrl', function($scope, $location) {
   $scope.items = [
     {value: '/home', label: 'Home'},
     {value: '/experience', label: 'Experience'},
@@ -16,7 +16,7 @@ angular.module('resume', ['ngResource'])
   ];
 
   $scope.getClass = function(item) {
-    return $location.path() == item.value ? "pure-menu-selected" : "pure-menu-non-selected";
+    return $location.path() == item.value ? "active" : "";
   }
 })
 
@@ -36,17 +36,12 @@ angular.module('resume', ['ngResource'])
         });
 
         return deferred.promise;
-      },
-
-      link: function() {
-
       }
     }
   }
 }])
 
-.controller('PetsCtrl', function($scope, $octo) {
-  mixpanel.track("Pets");
+.controller('MainCtrl', function($scope, $octo) {
   $scope.projects = [
     {
       who: 'n3-charts',
@@ -121,32 +116,33 @@ angular.module('resume', ['ngResource'])
       image: 'images/minesweeper.png'
     }
   ];
-})
 
-.controller('ExperienceCtrl', function($scope) {
-  mixpanel.track("Experience");
   $scope.experiences = [
     {
       what: 'Front-end engineer',
-      when: 'since january 2014',
+      from: "jan 14",
+      to: "now",
       how: 'Remotely working for an industry-leading SaaS startup based in San Francisco on the client-side layer of an exploratory analytics application. Also developing creative solutions for data visualization using D3.js (heck, this rocks).',
       tags: ['CoffeeScript', 'HTML', 'AngularJS', 'D3.js', 'Sass', 'LESS', 'Python', 'Bash']
     },
     {
       what: 'Front-end developer',
-      when: 'from january 2011 to november 2013',
+      from: "jan 11",
+      to: "nov 13",
       how: "Built three versions of the graphical interface of a cellular networks (both railways and mobile) monitoring solution. I've successfully solved several data visualization issues in a creative, user-centric way : representing technical data linked to a phone call, for instance, which can not be achieved in a classical chart but must be friendlier than a regular grid.",
       tags: ['JavaScript', 'HTML', 'Qooxdoo', 'D3.js', 'CSS', 'LESS', 'Python', 'Flex', 'AngularJS']
     },
     {
       what: 'Flex developer',
-      when: 'from 2008 to 2011',
+      from: "sep 08",
+      to: "dec 10",
       how: 'Build a three dimensional chart for mathematical data visualization. Mostly worked on a Matlab-like Rich Internet Application, and on internal tools such as an Air-based icon builder.',
       tags: ['Flex', 'ActionScript', 'XML', 'Flex Charts']
     },
     {
       what: "Engineer's degree",
-      when: 'from 2003 to 2008',
+      from: "sep 03",
+      to: "jul 08",
       how: 'Degree from a generalist engineering school. Learned disciplins such as physics, thermodynamics, industrial electricity, automatisms, electronics...',
       tags: []
     }
