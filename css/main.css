@@ -13,25 +13,58 @@
   margin-top: 30px;
 }
 
-.blue * {
-  color: hsla(215, 65%, 54%, 1);
+.blue, .blue * {
+  color: hsla(215, 65%, 54%, 1)!important;
+}
+
+.sub-nav dd.experience.active a {
+  background-color: hsla(215, 65%, 54%, 1);
+}
+
+.bd-grey {
+  border: 1px dashed lightgrey;
+}
+
+.bg-grey {
+  background-color: hsla(0, 0%, 98%, 1);
 }
 
 .green * {
   color: hsla(152, 74%, 35%, 1);
 }
 
-.bd-grey {
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-}
-
 .bg-green {
   background-color: hsla(152, 74%, 35%, 1);
 }
 
+.sub-nav dd.projects.active a {
+  background-color: hsla(152, 74%, 35%, 1);
+}
+
+
+.fun-fact {
+  margin-top: 20px;
+}
+
+.fun-fact > * {
+  vertical-align: middle;
+}
+
+.fun-fact .number {
+  font-size: 40px;
+  padding-left: 10px;
+}
+
+.fun-fact .legend {
+  line-height: 17px;
+}
 
 /* Experiences */
+.section.experiences .experience {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+
 .section.experiences .experience .title .text {
   font-size: 1.5em;
 }
@@ -45,9 +78,14 @@
   color: initial;
 }
 
+.section.experiences .label {
+  margin-right: 5px;
+}
+
 .section.experiences .experience .tag {
   margin-top: 5px;
   opacity: 0;
+  font-family: monospace;
 
   -webkit-transition: opacity linear 0.3s;
   -moz-transition: opacity linear 0.3s;
@@ -66,19 +104,11 @@
   content: " -> ";
 }
 
-.section.experiences .experience {
-  margin-bottom: 40px;
-}
-
-.section.experiences .label {
-  margin-right: 5px;
-}
 /* - */
 
 
 /* Pet projects */
 .project {
-  background-color: hsla(0, 0%, 98%, 1);
   margin: 0 auto;
   margin-bottom: 60px;
   max-width: 320px;
@@ -167,10 +197,10 @@
 
 .splash {
   margin-top: 130px;
-  margin-bottom: 250px;
+  margin-bottom: 50px;
 }
 
-.blah {
-  margin: 60px auto 100px auto;
-  /*font-size: 1.2em;*/
+.splash .more {
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
