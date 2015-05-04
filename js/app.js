@@ -42,6 +42,8 @@ angular.module('resume', ['ngResource'])
 }])
 
 .controller('MainCtrl', function($scope, $octo) {
+  mixpanel.track("Home");
+  
   $scope.projects = [
     {
       who: 'n3-charts',
