@@ -11,16 +11,16 @@
   <link rel="stylesheet" href="css/foundation.css" />
 
   <link rel="stylesheet" href="css/main.css">
-  
+
   <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
 for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
 mixpanel.init("b39c8a4d88f160e6662e502f11607edc");</script><!-- end Mixpanel -->
-  
+
 </head>
 
 <body ng-controller="MainCtrl">
 
-  <div data-magellan-expedition="fixed">
+  <div class="navbar" data-magellan-expedition="fixed">
     <dl class="sub-nav">
       <dd data-magellan-arrival="home"><a href="#home">Home</a></dd>
       <dd class="experience" data-magellan-arrival="experience"><a href="#experience">Experience</a></dd>
@@ -39,25 +39,25 @@ mixpanel.init("b39c8a4d88f160e6662e502f11607edc");</script><!-- end Mixpanel -->
       </h4>
     </div>
     <div class="small-12 large-6 columns">
-      <div class="fun-fact bd-grey bg-grey">
+      <div class="fun-fact shadowed bg-grey">
         <span class="number blue">5</span>
         <span class="legend">years spent making things work</span>
       </div>
     </div>
     <div class="small-12 large-6 columns">
-      <div class="fun-fact bd-grey bg-grey">
+      <div class="fun-fact shadowed bg-grey">
         <span class="number blue">6</span>
         <span class="legend">funky projects on GitHub</span>
       </div>
     </div>
     <div class="small-12 large-6 columns">
-      <div class="fun-fact bd-grey bg-grey">
+      <div class="fun-fact shadowed bg-grey">
         <span class="number blue">1.5</span>
         <span class="legend">years spent working remotely</span>
       </div>
     </div>
     <div class="small-12 large-6 columns">
-      <div class="fun-fact bd-grey bg-grey">
+      <div class="fun-fact shadowed bg-grey">
         <span class="number blue">2</span>
         <span class="legend">spoken & written languages</span>
       </div>
@@ -76,7 +76,7 @@ mixpanel.init("b39c8a4d88f160e6662e502f11607edc");</script><!-- end Mixpanel -->
       <div class="large-1 columns line show-for-large-only"></div>
     </div>
 
-    <div class="row experience bd-grey bg-grey" ng-repeat='exp in experiences'>
+    <div class="row experience shadowed bg-grey" ng-repeat='exp in experiences'>
       <div class="time text-right large-3 columns show-for-large-up">
         <div class="from">{{exp.from}}</div>
         <div class="to">{{exp.to}}</div>
@@ -105,7 +105,7 @@ mixpanel.init("b39c8a4d88f160e6662e502f11607edc");</script><!-- end Mixpanel -->
     <div class="row">
 
       <div ng-repeat='project in projects' class="small-12 medium-6 large-4 columns">
-        <div class="project bd-grey bg-grey">
+        <div class="project shadowed bg-grey">
           <div class="title green">
             {{project.who}} <a target="_blank" ng-href="{{project.stargazers.link}}"><span ng-show="project.stargazers" class="stargazers"><i class="fa fa-star"></i> {{project.stargazers.count}}</span></a>
           </div>
