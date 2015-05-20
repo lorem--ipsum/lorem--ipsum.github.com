@@ -41,9 +41,9 @@ angular.module('resume', ['ngResource'])
   }
 }])
 
-.controller('MainCtrl', function($scope, $octo) {
+.controller('MainCtrl', function($scope, $octo, $http) {
   mixpanel.track("Home");
-  
+
   $scope.projects = [
     {
       who: 'n3-charts',
@@ -149,5 +149,9 @@ angular.module('resume', ['ngResource'])
       tags: []
     }
   ];
+
+  $http.get('images/photography/data.json').then(function(result) {
+    $scope.pictures = result.data;
+  });
 })
 ;

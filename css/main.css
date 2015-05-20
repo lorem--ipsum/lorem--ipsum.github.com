@@ -25,6 +25,10 @@ body, .navbar {
   background-color: hsla(215, 65%, 54%, 1);
 }
 
+.sub-nav dd.pictures.active a {
+  background-color: black;
+}
+
 .bd-grey {
   border: 1px dashed lightgrey;
 }
@@ -80,11 +84,14 @@ body, .navbar {
 
 .section.experiences .experience .time {
   padding-top: 10px;
-  color: lightgrey;
+  opacity: 0.4;
+  -webkit-transition: opacity linear 0.3s;
+  -moz-transition: opacity linear 0.3s;
+  transition: opacity linear 0.3s;
 }
 
 .section.experiences .experience:hover .time {
-  color: initial;
+  opacity: 1;
 }
 
 .section.experiences .label {
@@ -115,6 +122,46 @@ body, .navbar {
 
 /* - */
 
+
+/* Pictures */
+
+.picture {
+  position: relative;
+}
+
+.picture .overlay {
+  cursor: pointer;
+  opacity: 0;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: hsla(0, 0%, 94%, 0.8);
+
+  -webkit-transition: opacity linear 0.3s;
+  -moz-transition: opacity linear 0.3s;
+  transition: opacity linear 0.1s;
+}
+
+.picture:hover .overlay {
+  opacity: 1;
+}
+
+.picture .picture-title {
+  text-align: center;
+  padding-top: 18px;
+  height: 100%;
+  font-size: 1.4em;
+  font-family: sans-serif;
+  font-weight: bold!important;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 100%;
+}
+
+/* - */
 
 /* Pet projects */
 .project {
@@ -212,4 +259,16 @@ body, .navbar {
 .splash .more {
   margin-top: 100px;
   margin-bottom: 50px;
+}
+
+.lightbox {
+  -webkit-transition: height linear 0.1s;
+  -moz-transition: height linear 0.1s;
+  transition: height linear 0.1s;
+  height: 460px;
+  overflow: hidden;
+}
+
+.minimized {
+  height: 0px;
 }
