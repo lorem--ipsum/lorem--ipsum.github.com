@@ -1,0 +1,77 @@
+.id-card {
+  text-align: center;
+  padding: 50px 0 0 0;
+
+  .avatar {
+    width: 100px;
+    clip-path: circle(50% at center);
+    margin-bottom: 15px;
+  }
+
+  .label {
+    margin-bottom: 5px;
+  }
+
+  .description {
+    padding-top: 5px;
+    font-size: 28px;
+  }
+
+  .social {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+    .icon {
+      width: 30px;
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  @media all and (min-width: 600px) {
+    .label {
+      color: var(--text-color-light);
+    }
+
+    .description {
+      color: var(--text-color);
+    }
+
+    .social {
+      .icon {
+        fill: var(--text-color-light);
+
+        &:hover,
+        &:active {
+          fill: var(--color);
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    background-color: var(--color);
+    padding-bottom: 20px;
+
+    .label,
+    .description {
+      color: white;
+    }
+
+    .social {
+      .icon {
+        fill: white;
+        opacity: 0.6;
+
+        &:hover,
+        &:active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

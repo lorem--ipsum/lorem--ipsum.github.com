@@ -1,0 +1,55 @@
+.app {
+  // --color: #3c5a98;
+  --color: #e2583c;
+  --text-color: #212121;
+  --text-color-light: #9d9e9e;
+
+  display: grid;
+  max-width: 1600px;
+  margin: 0 auto 0 auto;
+
+  @media all and (min-width: 600px) {
+    padding: 0 20px 50px 20px;
+
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      'id id'
+      'career skills';
+
+    grid-gap: 70px 80px;
+  }
+
+  @media all and (max-width: 600px) {
+    padding-bottom: 50px;
+    grid-template-columns: 10px 1fr 10px;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'id id id'
+      '. skills .'
+      '. career .';
+
+    grid-gap: 50px 0px;
+  }
+
+  .id-card {
+    grid-area: id;
+  }
+
+  .section-label {
+    margin-bottom: 7px;
+  }
+
+  .career {
+    grid-area: career;
+  }
+
+  .skills {
+    grid-area: skills;
+    padding-top: 5px;
+  }
+
+  a {
+    text-decoration-color: var(--text-color-light);
+  }
+}

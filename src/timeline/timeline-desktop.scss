@@ -1,0 +1,85 @@
+$dot-size: 40px;
+
+> .section-label {
+  position: absolute;
+  top: 5px;
+  left: 80px;
+}
+
+.year {
+  height: $dot-size;
+  width: $dot-size;
+  line-height: $dot-size;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 13px;
+
+  border: 1px solid var(--color);
+}
+
+.experience {
+  min-height: 120px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: $dot-size / 2;
+  padding-left: 80px - $dot-size/2;
+  border-left: 1px solid lightgrey;
+  display: flex;
+  align-items: center;
+
+  .card {
+    flex: 1;
+    position: relative;
+    text-align: justify;
+    padding: 15px 15px 5px 15px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+
+    > *:not(:last-child) {
+      margin-bottom: 5px;
+    }
+
+    .title {
+      font-weight: bold;
+      color: var(--color);
+
+      .duration {
+        font-size: 0.7em;
+        font-weight: initial;
+        float: right;
+      }
+    }
+
+    .company {
+      color: var(--text-color-light);
+    }
+
+    .description {
+      padding-top: 5px;
+      color: --text-color;
+      font-size: 0.9em;
+      line-height: 1.2em;
+    }
+
+    .tags {
+      padding-top: 10px;
+      text-align: right;
+      font-size: 0.8em;
+      color: var(--text-color-light);
+    }
+
+    &:after {
+      $size: 10px;
+      content: '';
+      position: absolute;
+      height: $size;
+      width: $size;
+      border-left: 1px solid lightgrey;
+      border-bottom: 1px solid lightgrey;
+      background-color: #f2f3f6;
+      transform: translate(-$size/2 - 1, -50%) rotateZ(45deg);
+      top: 50%;
+      left: 0px;
+    }
+  }
+}

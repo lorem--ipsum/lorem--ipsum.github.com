@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Technical",
+    "items": [
+      "leave code in a better shape than before",
+      "fix bugs quickly",
+      "maintain code quality and monitor build failures"
+    ]
+  },
+  {
+    "title": "Leadership",
+    "items": [
+      "writing modular, well-tested and maintainable code",
+      "proposing new ideas, performing feasability analysis and scoping the work",
+      "leading complex features and bug fixes with architectural perspective",
+      "mentoring junior developers",
+      "improving the teams's tooling and process to make it more effective"
+    ]
+  },
+  {
+    "title": "Communication",
+    "items": [
+      "feedback for peers, in a positive way and always by being specific and giving ways to improve",
+      "issues/tickets by keeping them up-to-date and well-documented"
+    ]
+  }
+]

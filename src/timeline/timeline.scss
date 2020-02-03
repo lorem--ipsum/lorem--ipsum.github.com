@@ -1,0 +1,40 @@
+.timeline {
+  position: relative;
+
+  .year {
+    border: 1px solid var(--color);
+
+    background-color: var(--color);
+    color: white;
+  }
+
+  .experience {
+    .card {
+      .title {
+        font-weight: bold;
+        color: var(--color);
+      }
+
+      .company {
+        color: var(--text-color-light);
+      }
+
+      .description {
+        color: --text-color;
+      }
+
+      .tags {
+        font-size: 0.8em;
+        color: var(--text-color-light);
+      }
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    @import './timeline-mobile';
+  }
+
+  @media all and (min-width: 600px) {
+    @import './timeline-desktop';
+  }
+}

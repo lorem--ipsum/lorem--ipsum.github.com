@@ -1,0 +1,62 @@
+[
+  {
+    "label": "Senior front-end engineer",
+    "company": "Imply",
+    "duration": "4 years and counting",
+    "href": "https://imply.io/",
+    "toYear": "now",
+    "fromYear": 2016,
+    "description": "Working on Pivot, an exploratory visualization UI that allows for fast drilldowns in very large data sets. Main missions: create and maintain components libraries, build systems, tests suites; implement interfaces based on design sketches. Implemented a complete suite of end-to-end tests with regression detection on screenshots.",
+    "tags": [
+      "TypeScript",
+      "React",
+      "Node.js",
+      "SASS",
+      "Webpack",
+      "Puppeteer",
+      "Jest",
+      "Travis",
+      "Immutables"
+    ]
+  },
+  {
+    "label": "Front-end engineer",
+    "company": "Metamarkets",
+    "duration": "3 years",
+    "href": "https://metamarkets.com/",
+    "toYear": 2016,
+    "fromYear": 2013,
+    "description": "Remotely worked on the client-side layer of Metamarkets' exploratory analytics application. Developed creative solutions for data visualization using D3.js, and drove the migration to using AngularJS.",
+    "tags": ["CoffeeScript", "HTML", "AngularJS", "D3.js", "Sass", "LESS", "Python", "Bash"]
+  },
+  {
+    "label": "Front-end developer",
+    "company": "Expandium",
+    "duration": "3 years",
+    "href": "https://www.expandium.com/",
+    "toYear": 2013,
+    "fromYear": 2010,
+    "description": "Built three versions of the graphical interface of a cellular networks (both railways and mobile) monitoring solution. I've successfully solved several data visualization issues in a creative, user-centric way: representing technical data linked to a phone call, for instance, which can not be achieved in a classical chart but must be friendlier than a regular grid.",
+    "tags": ["JavaScript", "HTML", "Qooxdoo", "D3.js", "CSS", "LESS", "Python", "Flex", "AngularJS"]
+  },
+  {
+    "label": "Flex developer",
+    "company": "Ishango",
+    "duration": "2 years",
+    "href": "",
+    "toYear": 2010,
+    "fromYear": 2008,
+    "description": "Build a three dimensional chart for mathematical data visualization. Mostly worked on a Matlab-like Rich Internet Application, and on internal tools such as an Air-based icon builder.",
+    "tags": ["Flex", "ActionScript", "XML", "Flex Charts"]
+  },
+  {
+    "label": "Engineering degree (master level)",
+    "company": "EIGSI",
+    "duration": "5 years",
+    "href": "https://www.eigsi.fr/?lang=en",
+    "toYear": 2008,
+    "fromYear": 2003,
+    "description": "Two years of preparatory cycle and three years of engineering cycle on topics such as general engineering sciences, electrical systems and automation, computer sciences, mechanics and energetics, foreign languages, management...",
+    "tags": []
+  }
+]
