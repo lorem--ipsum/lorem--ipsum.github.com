@@ -47,6 +47,26 @@
   .skills {
     grid-area: skills;
     padding-top: 5px;
+
+    .demo {
+      margin-top: 50px;
+      text-align: center;
+
+      .oud {
+        display: inline-block;
+      }
+
+      .label {
+        margin-top: 10px;
+        font-size: 0.8em;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .demo {
+        display: none;
+      }
+    }
   }
 
   a {
