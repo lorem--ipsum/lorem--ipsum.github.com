@@ -15,7 +15,8 @@
     grid-template-rows: auto 1fr;
     grid-template-areas:
       'id id'
-      'career skills';
+      'career skills'
+      'footer footer';
 
     grid-gap: 70px 80px;
   }
@@ -27,7 +28,8 @@
     grid-template-areas:
       'id id id'
       '. skills .'
-      '. career .';
+      '. career .'
+      '. footer .';
 
     grid-gap: 50px 0px;
   }
@@ -66,6 +68,33 @@
       .demo {
         display: none;
       }
+    }
+  }
+
+  footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 1.1em;
+    color: var(--text-color);
+    position: relative;
+
+    &:before {
+      content: '';
+      border-top: 1px solid var(--text-color-light);
+      width: 60px;
+      position: absolute;
+      top: 50%;
+      left: calc(50% - 120px);
+    }
+
+    &:after {
+      content: '';
+      border-top: 1px solid var(--text-color-light);
+      width: 60px;
+      position: absolute;
+      top: 50%;
+      left: calc(50% + 60px);
     }
   }
 

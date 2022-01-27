@@ -24,6 +24,14 @@ export default function App() {
           </div>
         </a>
       </div>
+      <footer>
+        <p>Made with React</p>
+        <p>
+          <a href="https://www.aliceleguennec.com" target="_blank">
+            Beautiful pictures
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }
