@@ -2,7 +2,7 @@
   {
     "label": "Senior front-end engineer",
     "company": "Imply",
-    "duration": "6 years and counting",
+    "duration": "8 years (still working there)",
     "href": "https://imply.io/",
     "toYear": "now",
     "fromYear": 2016,
@@ -11,11 +11,12 @@
       "TypeScript",
       "React",
       "Node.js",
+      "Styled Components",
       "SASS",
       "Webpack",
       "Puppeteer",
       "Jest",
-      "Travis",
+      "GitHub Actions",
       "Immutables"
     ]
   },
