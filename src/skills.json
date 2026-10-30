@@ -1,20 +1,40 @@
 [
   {
-    "title": "Technical",
-    "items": [
-      "leave code in a better shape than before",
-      "fix bugs quickly",
-      "maintain code quality and monitor build failures"
-    ]
+    "title": "Front-end",
+    "items": ["React, TypeScript, JavaScript, HTML, CSS, CSS Modules, Stitches, CSS-in-JS"]
+  },
+  {
+    "title": "Data visualization & maps",
+    "items": ["D3.js, OpenLayers, Leaflet, OpenStreetMap"]
+  },
+  {
+    "title": "Libraries",
+    "items": ["Zustand, TanStack Query, Radix UI, Storybook"]
+  },
+  {
+    "title": "Tooling",
+    "items": ["Vite, Webpack, Node.js, Bun, NPM, pnpm, Git, GitHub, Docker, Linux"]
+  },
+  {
+    "title": "Testing",
+    "items": ["Jest, Vitest, Cypress, Playwright"]
+  },
+  {
+    "title": "APIs & CI",
+    "items": ["GraphQL, REST APIs, GitHub Actions"]
+  },
+  {
+    "title": "Languages",
+    "items": ["English (fluent), French (native), German (basic)"]
   },
   {
     "title": "Leadership",
     "items": [
       "write modular, well-tested and maintainable code",
-      "propose new ideas, performing feasability analysis and scoping the work",
+      "propose new ideas, performing feasibility analysis and scoping the work",
       "lead complex features and bug fixes with architectural perspective",
       "mentor junior developers",
-      "improve the teams's tooling and process to make it more effective"
+      "improve the team's tooling and process to make it more effective"
     ]
   },
   {
