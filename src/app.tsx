@@ -27,11 +27,6 @@ export default function App() {
       </div>
       <footer className={styles.footer}>
         <p>Made with React</p>
-        <p>
-          <a href="https://www.aliceleguennec.com" target="_blank" rel="noopener">
-            Beautiful pictures
-          </a>
-        </p>
       </footer>
     </div>
   );
