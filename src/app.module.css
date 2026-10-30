@@ -1,8 +1,4 @@
 .app {
-  --color: #e2583c;
-  --text-color: #212121;
-  --text-color-light: #9d9e9e;
-
   display: grid;
   max-width: 1600px;
   margin: 0 auto 0 auto;

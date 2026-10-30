@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className={styles.app}>
       <div className={styles.id}>
-        <IDCard />
+        <IDCard current="work" />
       </div>
       <div className={styles.career}>
         <Timeline title="Work Experience" items={career} />

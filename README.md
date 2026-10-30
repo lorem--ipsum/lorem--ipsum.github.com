@@ -10,6 +10,7 @@ Personal résumé site. React 18 + TypeScript, built with Vite, styled with CSS 
 - `npm run deploy` – build and publish `build/` to the `master` branch (GitHub Pages)
 
 The `CNAME` lives in `public/` so that `gh-pages` doesn't wipe it on deploy.
-Content is in `src/career.json` and `src/skills.json`.
+Two pages: the résumé (`index.html`) and `/projects/` (`projects/index.html`), each its own Vite entry so the projects page does not load `oud`.
+Content is in `src/career.json`, `src/skills.json` and `src/projects.json`.
 
 `.npmrc` sets `legacy-peer-deps` because `oud` pulls in Material-UI v4, which predates React 18.

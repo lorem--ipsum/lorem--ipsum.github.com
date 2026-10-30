@@ -1,0 +1,54 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 20px;
+
+  @media all and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+}
+
+.title {
+  font-weight: bold;
+  color: var(--color);
+  margin-bottom: 8px;
+}
+
+.year {
+  float: right;
+  font-size: 0.7em;
+  font-weight: initial;
+}
+
+.description {
+  font-size: 0.9em;
+  line-height: 1.3em;
+  color: var(--text-color);
+  flex: 1;
+}
+
+.tags {
+  margin-top: 12px;
+  font-size: 0.8em;
+  color: var(--text-color-light);
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  font-size: 0.9em;
+
+  a {
+    color: var(--color);
+    text-decoration-color: var(--text-color-light);
+  }
+}

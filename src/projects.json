@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Salamander",
+    "year": 2026,
+    "description": "A noise generator built to run all night on a locked iPhone and mask bass coming through a wall. iOS suspends Web Audio and won't let you set media volume, so the noise is rendered offline as a seamlessly loopable WAV, built directly in the frequency domain and inverse-FFT'd, then played through a plain <audio loop>. Levels are matched on A-weighted loudness rather than energy.",
+    "tags": ["JavaScript", "Web Audio", "FFT", "No dependencies"],
+    "links": [
+      { "label": "Demo", "href": "https://fragnaud.fr/salamander/" },
+      { "label": "Source", "href": "https://github.com/lorem--ipsum/salamander" }
+    ]
+  },
+  {
+    "name": "Loki Validator",
+    "year": 2026,
+    "description": "A desktop app for reviewing Loki visual regression snapshots from CI artifacts. Drop the artifact folder on the app, review each diff side by side (reference, current, difference), approve or skip from the keyboard, then write the approved images back to the project in one go.",
+    "tags": ["TypeScript", "Tauri", "Rust", "Visual regression"],
+    "links": [{ "label": "Source", "href": "https://github.com/lorem--ipsum/loki-validator" }]
+  },
+  {
+    "name": "Color Picker",
+    "year": 2026,
+    "description": "A lightweight macOS menu bar app: click the dot, sample any colour on screen, and the hex value lands on the clipboard. Shift-click to keep picking, arrow keys to nudge the cursor one pixel at a time.",
+    "tags": ["Swift", "macOS"],
+    "links": [{ "label": "Source", "href": "https://github.com/lorem--ipsum/color-picker" }]
+  },
+  {
+    "name": "Oud",
+    "year": 2022,
+    "description": "An interactive particle engine built with React and three.js. Place emitters and attractors, tweak their expressions live, and share the result as a URL.",
+    "tags": ["TypeScript", "React", "three.js", "WebGL"],
+    "links": [
+      { "label": "Demo", "href": "/oud/" },
+      { "label": "Source", "href": "https://github.com/lorem--ipsum/oud" }
+    ]
+  },
+  {
+    "name": "Hear-ye",
+    "year": 2022,
+    "description": "An opinionated component workbench for React, to develop components in isolation and pick the right component for the right need.",
+    "tags": ["TypeScript", "React", "webpack"],
+    "links": [{ "label": "Source", "href": "https://github.com/lorem--ipsum/hear-ye" }]
+  },
+  {
+    "name": "Cammy",
+    "year": 2015,
+    "description": "A simple orthogonal projection camera built on top of AngularJS and D3.js: pan and zoom around a scene of SVG shapes.",
+    "tags": ["AngularJS", "D3.js", "JavaScript"],
+    "links": [
+      { "label": "Demo", "href": "https://fragnaud.fr/cammy/" },
+      { "label": "Source", "href": "https://github.com/lorem--ipsum/cammy" }
+    ]
+  },
+  {
+    "name": "Percival",
+    "year": 2013,
+    "description": "A boolean syntax tree editor for AngularJS, in the spirit of the iTunes smart playlist editor: give it an AST and it renders a form to edit it.",
+    "tags": ["AngularJS", "JavaScript"],
+    "links": [
+      { "label": "Demo", "href": "https://fragnaud.fr/percival/" },
+      { "label": "Source", "href": "https://github.com/lorem--ipsum/percival" }
+    ]
+  }
+]

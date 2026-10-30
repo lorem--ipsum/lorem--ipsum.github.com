@@ -2,12 +2,23 @@ import avatar from '../avatar.jpeg';
 
 import styles from './id-card.module.css';
 
-export default function IDCard() {
+interface IDCardProps {
+  current: 'work' | 'projects';
+}
+
+export default function IDCard(props: IDCardProps) {
+  const { current } = props;
+
+
   return (
     <div className={styles.card}>
       <img className={styles.avatar} alt="" src={avatar} />
       <div className={styles.label}>Sébastien Fragnaud</div>
       <div className={styles.description}>Senior front-end engineer</div>
+      <nav className={styles.nav}>
+        {current === 'work' ? <span>Work</span> : <a href="/">Work</a>}
+        {current === 'projects' ? <span>Projects</span> : <a href="/projects/">Projects</a>}
+      </nav>
       <div className={styles.social}>
         <a className={styles.icon} href="https://github.com/lorem--ipsum/">
           <svg viewBox="0 0 496 512">

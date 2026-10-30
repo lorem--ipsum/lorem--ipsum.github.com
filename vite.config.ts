@@ -3,5 +3,13 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [react()],
-  build: { outDir: 'build' },
+  build: {
+    outDir: 'build',
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        projects: 'projects/index.html',
+      },
+    },
+  },
 });
