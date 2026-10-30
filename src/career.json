@@ -1,34 +1,33 @@
 [
   {
-    "label": "Software engineer",
+    "label": "Senior software engineer",
     "company": "Metabase",
     "duration": "1 year and counting",
     "href": "https://www.metabase.com/",
     "toYear": "now",
     "fromYear": 2025,
-    "description": "Develop interactive data visualizations, custom charts and embedded analytics solutions with React and JavaScript for a business intelligence platform. Build responsive user interfaces enabling real-time data interaction and visualization features for enterprise customers. Improve developer experience by optimizing CI/CD pipelines with GitHub Actions, streamlining builds and development workflows. Collaborate closely with design and UX teams to prototype and iterate on new product features, turning user research and design concepts into working front-end implementations.",
-    "tags": ["React", "JavaScript", "Data visualization", "Embedded analytics", "CI/CD", "GitHub Actions"]
+    "highlights": [
+      "Build interactive visualizations, custom chart types and embedded analytics features in React for an open-source BI platform used by 1000+ organizations.",
+      "Shipped \"visualizer\", letting enterprise customers streamline their dashboard creation flow.",
+      "Cut e2e test CI time in half by restructuring GitHub Actions pipelines and build steps.",
+      "Prototype new features with design and UX, turning research findings into production UI."
+    ],
+    "tags": ["React", "Data visualization", "Embedded analytics", "GitHub Actions"]
   },
   {
-    "label": "Software engineer",
+    "label": "Senior software engineer",
     "company": "Imply Data",
     "duration": "9 years",
     "href": "https://imply.io/",
     "toYear": 2025,
     "fromYear": 2016,
-    "description": "Worked on Pivot, an exploratory visualization UI that allows for fast exploration in very large data sets. Created and maintained component libraries, build systems and test suites; implemented interfaces based on design sketches, with in-depth use of TypeScript, React, SASS and CSS-in-JS. Technical lead on dashboards implementation, primary user flows design and implementation, and cross-team projects. Mentored junior developers through their progression.",
-    "tags": [
-      "TypeScript",
-      "React",
-      "Node.js",
-      "SASS",
-      "CSS-in-JS",
-      "Webpack",
-      "Puppeteer",
-      "Jest",
-      "Travis",
-      "Immutables"
-    ]
+    "highlights": [
+      "Core engineer on Pivot (later Imply's visualization UI), an exploratory analytics interface for sub-second queries over up to trillions of events in Apache Druid.",
+      "Technical lead for the dashboards product and primary user flows, from design through delivery, across 3 teams.",
+      "Created and maintained the shared component library, build system and test suites.",
+      "Mentored junior engineers through their promotion to mid-level."
+    ],
+    "tags": ["TypeScript", "React", "SASS", "CSS-in-JS", "Apache Druid"]
   },
   {
     "label": "Software engineer",
@@ -37,8 +36,11 @@
     "href": "https://metamarkets.com/",
     "toYear": 2016,
     "fromYear": 2014,
-    "description": "Remotely designed and developed an exploratory analytics front-end application for the advertising markets, with extensive use of JavaScript, AngularJS and D3.js. Fully compliant with TDD and Agile methodology, with everyday use of Git (GitHub).",
-    "tags": ["JavaScript", "CoffeeScript", "HTML", "AngularJS", "D3.js", "Sass", "LESS", "Python", "Bash", "Git"]
+    "highlights": [
+      "Designed and built an exploratory analytics front end for programmatic advertising data.",
+      "Worked test-first in an Agile team."
+    ],
+    "tags": ["AngularJS", "D3.js"]
   },
   {
     "label": "Front-end engineer",
@@ -47,24 +49,8 @@
     "href": "https://www.expandium.com/",
     "toYear": 2014,
     "fromYear": 2011,
-    "description": "Designed and developed a cellular networks monitoring web application, and installed and maintained production servers. Mostly used Flex, JavaScript, Qooxdoo and AngularJS. Created production and development workflows with Makefile, Grunt, Bower, Node, Git and SVN.",
-    "tags": [
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "Qooxdoo",
-      "AngularJS",
-      "D3.js",
-      "LESS",
-      "Flex",
-      "Python",
-      "Makefile",
-      "Grunt",
-      "Bower",
-      "Node.js",
-      "Git",
-      "SVN"
-    ]
+    "description": "Monitoring web app for mobile network operators; build tooling and production servers.",
+    "tags": ["Flex", "JavaScript", "AngularJS"]
   },
   {
     "label": "Flex engineer",
@@ -73,17 +59,17 @@
     "href": "",
     "toYear": 2011,
     "fromYear": 2009,
-    "description": "Designed and developed a mathematical visualization web application, including a 2D and 3D rendering engine in Flex and ActionScript 3.",
-    "tags": ["Flex", "ActionScript 3", "XML", "Flex Charts"]
+    "description": "Mathematical visualization web app with a custom 2D/3D rendering engine.",
+    "tags": ["Flex", "ActionScript 3"]
   },
   {
-    "label": "Engineering degree (master level)",
-    "company": "EIGSI",
+    "label": "M.Sc. Engineering (Diplôme d'Ingénieur)",
+    "company": "EIGSI, La Rochelle",
     "duration": "5 years",
     "href": "https://www.eigsi.fr/?lang=en",
     "toYear": 2008,
     "fromYear": 2003,
-    "description": "Two years of preparatory cycle and three years of engineering cycle in industrial sciences: general engineering sciences, mechanics, electrical systems and automation, computer sciences, energetics, foreign languages, management...",
+    "description": "Industrial systems.",
     "tags": []
   }
 ]

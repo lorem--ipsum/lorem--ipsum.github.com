@@ -1,47 +1,30 @@
 [
   {
-    "title": "Front-end",
-    "items": ["React, TypeScript, JavaScript, HTML, CSS, CSS Modules, Stitches, CSS-in-JS"]
+    "title": "Core",
+    "items": ["React, TypeScript, JavaScript, HTML, CSS"]
   },
   {
-    "title": "Data visualization & maps",
-    "items": ["D3.js, OpenLayers, Leaflet, OpenStreetMap"]
+    "title": "Data visualization",
+    "items": ["D3.js, custom SVG/Canvas charts, OpenLayers, Leaflet"]
   },
   {
-    "title": "Libraries",
-    "items": ["Zustand, TanStack Query, Radix UI, Storybook"]
-  },
-  {
-    "title": "Tooling",
-    "items": ["Vite, Webpack, Node.js, Bun, NPM, pnpm, Git, GitHub, Docker, Linux"]
+    "title": "State & UI",
+    "items": ["Zustand, TanStack Query, Radix UI, Storybook, CSS Modules, CSS-in-JS"]
   },
   {
     "title": "Testing",
     "items": ["Jest, Vitest, Cypress, Playwright"]
   },
   {
-    "title": "APIs & CI",
-    "items": ["GraphQL, REST APIs, GitHub Actions"]
+    "title": "Tooling",
+    "items": ["Vite, Webpack, Node.js, Bun, pnpm, Docker, GitHub Actions"]
+  },
+  {
+    "title": "APIs",
+    "items": ["REST, GraphQL"]
   },
   {
     "title": "Languages",
-    "items": ["English (fluent), French (native), German (basic)"]
-  },
-  {
-    "title": "Leadership",
-    "items": [
-      "write modular, well-tested and maintainable code",
-      "propose new ideas, performing feasibility analysis and scoping the work",
-      "lead complex features and bug fixes with architectural perspective",
-      "mentor junior developers",
-      "improve the team's tooling and process to make it more effective"
-    ]
-  },
-  {
-    "title": "Communication",
-    "items": [
-      "give feedback to peers, in a positive way and always by being specific and giving ways to improve",
-      "keep issues/tickets up-to-date and well-documented"
-    ]
+    "items": ["French (native), English (fluent), German (basic)"]
   }
 ]

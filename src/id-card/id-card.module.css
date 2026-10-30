@@ -18,6 +18,19 @@
   font-size: 28px;
 }
 
+.subtitle {
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+.summary {
+  max-width: 640px;
+  margin: 15px auto 0 auto;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
 .nav {
   display: flex;
   justify-content: center;
@@ -58,6 +71,11 @@
     color: var(--text-color);
   }
 
+  .subtitle,
+  .summary {
+    color: var(--text-color-light);
+  }
+
   .nav {
     color: var(--text-color);
 
@@ -88,6 +106,8 @@
 
   .label,
   .description,
+  .subtitle,
+  .summary,
   .nav,
   .nav a {
     color: white;
