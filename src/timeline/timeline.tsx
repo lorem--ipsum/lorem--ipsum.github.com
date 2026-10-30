@@ -1,8 +1,8 @@
-import React from 'react';
+import { Fragment } from 'react';
 
 import { SectionLabel } from '../section-label/section-label';
 
-import './timeline.scss';
+import styles from './timeline.module.css';
 
 interface TimelineProps {
   title?: string;
@@ -22,29 +22,29 @@ export function Timeline(props: TimelineProps) {
   const { items, title } = props;
 
   const years = items.map((item, i) => {
-    const company = <div className="company">{item.company}</div>;
+    const company = <div className={styles.company}>{item.company}</div>;
 
     return (
-      <React.Fragment key={i}>
-        {i === 0 && <div className="year active first">{item.toYear}</div>}
-        <div className="experience">
-          <div className="card">
-            <div className="title">
-              {item.label} <span className="duration">{item.duration}</span>
+      <Fragment key={i}>
+        {i === 0 && <div className={`${styles.year} ${styles.first}`}>{item.toYear}</div>}
+        <div className={styles.experience}>
+          <div className={styles.card}>
+            <div className={styles.title}>
+              {item.label} <span className={styles.duration}>{item.duration}</span>
             </div>
             {item.href ? <a href={item.href}>{company}</a> : company}
-            <div className="description">{item.description}</div>
-            <div className="tags">{item.tags.join(' - ')}</div>
+            <div className={styles.description}>{item.description}</div>
+            <div className={styles.tags}>{item.tags.join(' - ')}</div>
           </div>
         </div>
-        <div className="year">{item.fromYear}</div>
-      </React.Fragment>
+        <div className={styles.year}>{item.fromYear}</div>
+      </Fragment>
     );
   });
 
   return (
-    <div className="timeline">
-      {title && <SectionLabel label={title} />}
+    <div className={styles.timeline}>
+      {title && <SectionLabel label={title} className={styles.label} />}
       {years}
     </div>
   );

@@ -1,6 +1,7 @@
-.section-label {
+.label {
   font-size: 30px;
   color: var(--color);
+  margin-bottom: 7px;
 
   @media all and (max-width: 600px) {
     text-align: center;

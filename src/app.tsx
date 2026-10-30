@@ -1,4 +1,3 @@
-import React from 'react';
 import { Oud } from 'oud';
 
 import career from './career.json';
@@ -7,27 +6,29 @@ import IDCard from './id-card/id-card';
 import skills from './skills.json';
 import { Timeline } from './timeline/timeline';
 
-import './app.scss';
+import styles from './app.module.css';
 
 export default function App() {
   return (
-    <div className="app">
-      <IDCard />
-      <div className="career">
+    <div className={styles.app}>
+      <div className={styles.id}>
+        <IDCard />
+      </div>
+      <div className={styles.career}>
         <Timeline title="Work Experience" items={career} />
       </div>
-      <div className="skills">
+      <div className={styles.skills}>
         <DefinitionList title="Skills" groups={skills} />
         <a href="/oud">
-          <div className="demo">
+          <div className={styles.demo}>
             <Oud deaf exampleIndex={4} width={200} height={200} />
           </div>
         </a>
       </div>
-      <footer>
+      <footer className={styles.footer}>
         <p>Made with React</p>
         <p>
-          <a href="https://www.aliceleguennec.com" target="_blank">
+          <a href="https://www.aliceleguennec.com" target="_blank" rel="noopener">
             Beautiful pictures
           </a>
         </p>

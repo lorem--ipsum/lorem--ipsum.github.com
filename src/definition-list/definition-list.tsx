@@ -1,8 +1,6 @@
-import React from 'react';
-
 import { SectionLabel } from '../section-label/section-label';
 
-import './definition-list.scss';
+import styles from './definition-list.module.css';
 
 interface DefinitionListProps {
   title?: string;
@@ -16,16 +14,16 @@ export function DefinitionList(props: DefinitionListProps) {
   const { groups, title } = props;
 
   return (
-    <div className="definition-list">
+    <div>
       {title && <SectionLabel label={title} />}
       {groups.map(group => {
         return (
-          <div className="group" key={group.title}>
-            <div className="title">{group.title}</div>
-            <div className="items">
+          <div className={styles.group} key={group.title}>
+            <div className={styles.title}>{group.title}</div>
+            <div className={styles.items}>
               {group.items.map((item, i) => {
                 return (
-                  <div key={i} className="item">
+                  <div key={i} className={styles.item}>
                     {item}
                   </div>
                 );
