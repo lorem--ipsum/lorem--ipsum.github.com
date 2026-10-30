@@ -60,6 +60,11 @@
   }
 }
 
+/* `.oud` is the root class of the oud component, from its own global stylesheet */
+.demo > :global(.oud) {
+  display: inline-block;
+}
+
 .footer {
   grid-area: footer;
   text-align: center;
