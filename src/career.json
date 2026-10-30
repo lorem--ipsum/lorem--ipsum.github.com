@@ -6,13 +6,13 @@
     "href": "https://www.metabase.com/",
     "toYear": "now",
     "fromYear": 2025,
-    "highlights": [
-      "Build interactive visualizations, custom chart types and embedded analytics features in React for an open-source BI platform used by 1000+ organizations.",
-      "Shipped \"visualizer\", letting enterprise customers streamline their dashboard creation flow.",
-      "Cut e2e test CI time in half by restructuring GitHub Actions pipelines and build steps.",
-      "Prototype new features with design and UX, turning research findings into production UI."
+    "tags": [
+      "React",
+      "Data visualization",
+      "Embedded analytics",
+      "GitHub Actions"
     ],
-    "tags": ["React", "Data visualization", "Embedded analytics", "GitHub Actions"]
+    "description": "Build interactive visualizations, custom chart types and embedded analytics features in React for an open-source BI platform used by 1000+ organizations. Shipped \"visualizer\", letting enterprise customers streamline their dashboard creation flow. Cut e2e test CI time in half by restructuring GitHub Actions pipelines and build steps. Prototype new features with design and UX, turning research findings into production UI."
   },
   {
     "label": "Senior software engineer",
@@ -21,13 +21,14 @@
     "href": "https://imply.io/",
     "toYear": 2025,
     "fromYear": 2016,
-    "highlights": [
-      "Core engineer on Pivot (later Imply's visualization UI), an exploratory analytics interface for sub-second queries over up to trillions of events in Apache Druid.",
-      "Technical lead for the dashboards product and primary user flows, from design through delivery, across 3 teams.",
-      "Created and maintained the shared component library, build system and test suites.",
-      "Mentored junior engineers through their promotion to mid-level."
+    "tags": [
+      "TypeScript",
+      "React",
+      "SASS",
+      "CSS-in-JS",
+      "Apache Druid"
     ],
-    "tags": ["TypeScript", "React", "SASS", "CSS-in-JS", "Apache Druid"]
+    "description": "Core engineer on Pivot (later Imply's visualization UI), an exploratory analytics interface for sub-second queries over up to trillions of events in Apache Druid. Technical lead for the dashboards product and primary user flows, from design through delivery, across 3 teams. Created and maintained the shared component library, build system and test suites. Mentored junior engineers through their promotion to mid-level."
   },
   {
     "label": "Software engineer",
@@ -36,31 +37,21 @@
     "href": "https://metamarkets.com/",
     "toYear": 2016,
     "fromYear": 2014,
-    "highlights": [
-      "Designed and built an exploratory analytics front end for programmatic advertising data.",
-      "Worked test-first in an Agile team."
+    "tags": [
+      "AngularJS",
+      "D3.js"
     ],
-    "tags": ["AngularJS", "D3.js"]
+    "description": "Designed and built an exploratory analytics front end for programmatic advertising data. Worked test-first in an Agile team."
   },
   {
-    "label": "Front-end engineer",
-    "company": "Expandium",
-    "duration": "3 years",
-    "href": "https://www.expandium.com/",
-    "toYear": 2014,
-    "fromYear": 2011,
-    "description": "Monitoring web app for mobile network operators; build tooling and production servers.",
-    "tags": ["Flex", "JavaScript", "AngularJS"]
-  },
-  {
-    "label": "Flex engineer",
-    "company": "Ishango",
-    "duration": "2 years",
+    "label": "Earlier experience",
+    "company": "Expandium, Ishango",
+    "duration": "5 years",
     "href": "",
-    "toYear": 2011,
+    "toYear": 2014,
     "fromYear": 2009,
-    "description": "Mathematical visualization web app with a custom 2D/3D rendering engine.",
-    "tags": ["Flex", "ActionScript 3"]
+    "description": "Front-end engineer at Expandium (2011–2014): monitoring web app for mobile network operators, build tooling and production servers (Flex, JavaScript, AngularJS). Flex engineer at Ishango (2009–2011): mathematical visualization web app with a custom 2D/3D rendering engine (Flex, ActionScript 3).",
+    "tags": []
   },
   {
     "label": "M.Sc. Engineering (Diplôme d'Ingénieur)",

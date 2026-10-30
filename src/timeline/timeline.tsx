@@ -8,8 +8,7 @@ interface TimelineProps {
   title?: string;
   items: {
     label: string;
-    description?: string;
-    highlights?: string[];
+    description: string;
     duration: string;
     fromYear: number | string;
     toYear: number | string;
@@ -34,14 +33,7 @@ export function Timeline(props: TimelineProps) {
               {item.label} <span className={styles.duration}>{item.duration}</span>
             </div>
             {item.href ? <a href={item.href}>{company}</a> : company}
-            {item.description && <div className={styles.description}>{item.description}</div>}
-            {item.highlights && (
-              <ul className={styles.highlights}>
-                {item.highlights.map((highlight, j) => (
-                  <li key={j}>{highlight}</li>
-                ))}
-              </ul>
-            )}
+            <div className={styles.description}>{item.description}</div>
             <div className={styles.tags}>{item.tags.join(' - ')}</div>
           </div>
         </div>
